@@ -1,0 +1,13 @@
+.headerBg{
+    background-image: url('../../../assets/Cover/cover.jpg');
+    background-size: cover;
+}
+
+.headerBg h1:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #C33764;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .headerBg h1:hover:after { transform: scaleX(1); }

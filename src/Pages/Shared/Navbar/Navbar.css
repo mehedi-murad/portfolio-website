@@ -1,0 +1,8 @@
+.logo h2:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #C33764;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .logo h2:hover:after { transform: scaleX(1); }
