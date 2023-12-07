@@ -1,0 +1,8 @@
+.contactHeader h1:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #C33764;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .contactHeader h1:hover:after { transform: scaleX(0.27); }

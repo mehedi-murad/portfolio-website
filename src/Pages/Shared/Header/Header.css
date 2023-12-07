@@ -1,7 +1,7 @@
-.headerBg{
-    background-image: url('../../../assets/Cover/cover.jpg');
+/* .headerBg{
+    background-image: url('../../../assets/Cover/abstract.png');
     background-size: cover;
-}
+} */
 
 .headerBg h1:after{
     display:block;

@@ -3,7 +3,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-[#FFF3EA] p-8">
+    <div className="navbar p-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
