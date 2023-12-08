@@ -5,4 +5,4 @@
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
   }
-  .contactHeader h1:hover:after { transform: scaleX(0.27); }
+  .contactHeader h1:hover:after { transform: scaleX(0.4); }

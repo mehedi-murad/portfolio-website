@@ -3,44 +3,54 @@
         "name":"John Doe",
         "author_img":"https://i.ibb.co/frGFq7p/1-YMJDp-kqus7i-kt-Wtks-Njg.jpg",
         "author_designation":"CTO, XYZ Company",
+        "rating":"4.7",
         "desc":"A testimonial is an endorsement by someone who has had firsthand experience with a product or service and is willing to share their thoughts publicly."
     },
     {
         "name":"Sarah Smith",
         "author_img":"https://i.ibb.co/frGFq7p/1-YMJDp-kqus7i-kt-Wtks-Njg.jpg",
         "author_designation":"CMO, ABC Company",
+        "rating":"4.5",
         "desc":"A testimonial is an endorsement by someone who has had firsthand experience with a product or service and is willing to share their thoughts publicly."
     },
     {
         "name":"Steve Smith",
         "author_img":"https://i.ibb.co/frGFq7p/1-YMJDp-kqus7i-kt-Wtks-Njg.jpg",
         "author_designation":"CEO, ABC Company",
+        "rating":"4.9",
         "desc":"A testimonial is an endorsement by someone who has had firsthand experience with a product or service and is willing to share their thoughts publicly."
     },
     {
         "name":"ABD Villiers",
         "author_img":"https://i.ibb.co/frGFq7p/1-YMJDp-kqus7i-kt-Wtks-Njg.jpg",
         "author_designation":"MD, ABC Company",
+        "rating":"4.4",
         "desc":"A testimonial is an endorsement by someone who has had firsthand experience with a product or service and is willing to share their thoughts publicly."
     },
     {
         "name":"John Smith",
         "author_img":"https://i.ibb.co/frGFq7p/1-YMJDp-kqus7i-kt-Wtks-Njg.jpg",
         "author_designation":"MD, XYZ Company",
+        "rating":"4.7",
         "desc":"A testimonial is an endorsement by someone who has had firsthand experience with a product or service and is willing to share their thoughts publicly."
     },
     {
         "name":"Sheldon Travis",
         "author_img":"https://i.ibb.co/frGFq7p/1-YMJDp-kqus7i-kt-Wtks-Njg.jpg",
         "author_designation":"CTO, XYZ Company",
+        "rating":"4.9",
         "desc":"A testimonial is an endorsement by someone who has had firsthand experience with a product or service and is willing to share their thoughts publicly."
     },
     {
         "name":"Travis Head",
         "author_img":"https://i.ibb.co/frGFq7p/1-YMJDp-kqus7i-kt-Wtks-Njg.jpg",
         "author_designation":"CTO, XYZ Company",
+        "rating":"4.7",
         "desc":"A testimonial is an endorsement by someone who has had firsthand experience with a product or service and is willing to share their thoughts publicly."
     }
     
     
 ]
+
+
+

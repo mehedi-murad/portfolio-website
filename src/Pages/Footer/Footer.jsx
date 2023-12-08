@@ -1,15 +1,15 @@
-import { FaBehance, FaDribbble, FaFacebookF, FaInstagram, FaLocationArrow, FaMailBulk } from "react-icons/fa";
+import { FaBehance, FaDribbble, FaFacebookF, FaGithub, FaInstagram, FaLocationArrow, FaMailBulk } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import './Footer.css'
 
 
 const Footer = () => {
     return (
-        <div className="footerBg flex justify-evenly px-20 py-24 gap-8">
-            <div className="w-1/4 space-y-4 py-10">
+        <div className="footerBg flex flex-col md:flex-row justify-evenly px-20 py-24 gap-8">
+            <div className="md:w-1/4 space-y-4 py-10">
                 <div>
                     <Link to="/">
-                        <h2 className="font-bold text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#1D2671] to-[#C33764]">DESIGN<span className="">XCEL</span></h2>
+                        <h2 className="font-bold text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#1D2671] to-[#C33764]">DESIGNXCEL</h2>
                     </Link>
                 </div>
                 <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, similique. Suscipit tempore nulla, vel dolore dolorem earum ab sed laboriosam!</p>
@@ -38,7 +38,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div className="text-white">
+            <div className="text-white text-center">
                 <h2 className="text-2xl uppercase font-semibold my-2">Service Lists</h2>
                 <h3>Service 1</h3>
                 <h3>Service 1</h3>
@@ -56,10 +56,19 @@ const Footer = () => {
                         <FaInstagram />
                     </div>
                     <div className="bg-[#E76A18] hover:bg-white hover:text-gray-700 p-2 rounded-md">
-                        <FaBehance />
+                        <Link to="https://www.behance.net/mehedimurad">
+                            <FaBehance />
+                        </Link>
                     </div>
                     <div className="bg-[#E76A18] hover:bg-white hover:text-gray-700 p-2 rounded-md">
-                        <FaDribbble />
+                        <Link to="https://dribbble.com/DesignXcel">
+                            <FaDribbble />
+                        </Link>
+                    </div>
+                    <div className="bg-[#E76A18] hover:bg-white hover:text-gray-700 p-2 rounded-md">
+                         <Link to="https://github.com/designxcel">
+                            <FaGithub />
+                         </Link>
                     </div>
                 </div>
                 <div className="flex items-center gap-6">

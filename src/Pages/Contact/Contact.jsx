@@ -4,14 +4,14 @@ import './Contact.css'
 
 const Contact = () => {
     return (
-        <div className="contactHeader py-10">
+        <div className="contactHeader max-w-7xl mx-auto py-10">
             <div className="flex gap-6 items-center text-gray-400 justify-center">
                 <FaGripLinesVertical />
                 <h1 className="text-xl font-semibold">Contact with me</h1>
             </div>
             <h1 className=" text-center text-4xl font-bold mt-10">I WANT TO HEAR FROM YOU</h1>
-            <div className="flex items-center justify-evenly gap-10 p-20">
-                <div className="w-2/3 mx-auto">
+            <div className="flex flex-col md:flex-row items-center justify-evenly gap-8 p-20">
+                <div className="md:w-2/3 mx-auto">
                     <form className="space-y-4 w-full">
                         <input type="text" placeholder="Your Name" className="input input-bordered input-warning  w-full" /> <br />
                         <div className="flex gap-4">

@@ -1,11 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import 'swiper/css/navigation';
+import '@smastrom/react-rating/style.css'
+import { Navigation } from 'swiper/modules';
+import { Rating } from '@smastrom/react-rating';
+import { FaQuoteLeft } from 'react-icons/fa';
+
 
 const Testimonial = () => {
     const [testimonial, setTestimonial] = useState([])
@@ -17,44 +22,33 @@ const Testimonial = () => {
         })
     },[])
     return (
-        <div className='max-w-7xl mx-auto py-20'>
-            <h2 className='text-4xl font-bold text-center my-20 uppercase'>What Client Say!</h2>
-            <div>
-            <Swiper
-                slidesPerView={3}
-                spaceBetween={40}
-                pagination={{
-                clickable: true,
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
-            >
-                <div>
-                    {
-                        testimonial.map(item =>
-                            <SwiperSlide>
-                                <div className="card  bg-[#FFDBCB] shadow-md mb-20">
-                                    <div className="card-body">
-                                        <div className='flex gap-6 items-center'>
-                                            <div className='w-24 avatar'>
-                                                <img className=' rounded-full' src={item.author_img} alt="" />
-                                            </div>
-                                            <div>
-                                                <h2 className="card-title font-bold text-xl">{item.name}</h2>
-                                                <p>{item.author_designation}</p>
-                                            </div>
-                                        </div>
-                                        <div className="card-actions justify-end">
-                                            <p>{item.desc}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            )
-                    }
+        <div className='md:p-20 mt-10 mb-10'>
+        <h2 className='text-4xl font-bold text-center my-20 uppercase'>What Client Say!</h2>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            {
+                testimonial.map(testimonial =><SwiperSlide className="px-20 space-y-4" key={testimonial._id}>
+                <div className="flex justify-center">
+                    <Rating
+                    style={{ maxWidth: 180 }}
+                    value={testimonial.rating}
+                    readOnly
+                    />
                 </div>
+                <div className="avatar flex justify-center items-center">
+                    <div className="w-16 rounded-full">
+                        <img src={testimonial.author_img} />
+                    </div>
+                </div>
+                <div className="text-5xl text-cyan-400 flex justify-center">
+                    <FaQuoteLeft></FaQuoteLeft>
+                </div>
+                <p className=' text-center text-gray-400'>{testimonial.desc}</p>
+                <h2 className="text-3xl text-center font-bold uppercase text-gray-700">{testimonial.name}</h2>
+                <p className=' text-center text-gray-400'>{testimonial.author_designation}</p>
+            </SwiperSlide>)
+            }
             </Swiper>
-        </div>
+            <div className='divider'></div>
         </div>
     );
 };

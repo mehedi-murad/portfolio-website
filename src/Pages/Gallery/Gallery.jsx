@@ -41,8 +41,8 @@ const Gallery = () => {
         })
     },[])
     return (
-        <div className='bg-gray-100 py-20'>
-            <h2 className='text-4xl font-bold text-center'>Portfolio Gallery</h2>
+        <div className='bg-gray-100 py-20 galleryBg'>
+            <h1 className='text-4xl font-bold text-center'>Portfolio Gallery</h1>
             <div className='max-w-7xl mx-auto py-10'>
             <Tabs className="font-semibold">
                 <TabList>
