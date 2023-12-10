@@ -53,7 +53,9 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-end">
-        <button className="btn btn-outline hidden lg:block">HIRE ME</button>
+        <Link to="/hireMe">
+          <button className="btn btn-outline hidden lg:block">HIRE ME</button>
+        </Link>
       </div>
     </div>
   );
