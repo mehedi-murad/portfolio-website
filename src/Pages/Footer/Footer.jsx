@@ -1,4 +1,4 @@
-import { FaBehance, FaDribbble, FaFacebookF, FaGithub, FaInstagram, FaLocationArrow, FaMailBulk } from "react-icons/fa";
+import { FaBehance, FaDribbble, FaFacebookF, FaGithub, FaLinkedin, FaLocationArrow, FaMailBulk } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import './Footer.css'
 
@@ -50,10 +50,14 @@ const Footer = () => {
                 <h2 className="text-2xl uppercase font-semibold">Follow Me</h2>
                 <div className="flex items-center gap-4 text-white">
                     <div className="bg-[#E76A18] hover:bg-white hover:text-gray-700 p-2 rounded-md">
-                        <FaFacebookF />
+                        <Link to="https://www.facebook.com/mehedimurad08">
+                            <FaFacebookF />
+                        </Link>
                     </div>
                     <div className="bg-[#E76A18] hover:bg-white hover:text-gray-700 p-2 rounded-md">
-                        <FaInstagram />
+                        <Link to="https://www.linkedin.com/in/mehedi-murad-183a11208/">
+                            <FaLinkedin></FaLinkedin>
+                        </Link>
                     </div>
                     <div className="bg-[#E76A18] hover:bg-white hover:text-gray-700 p-2 rounded-md">
                         <Link to="https://www.behance.net/mehedimurad">

@@ -4,7 +4,7 @@ import "./Navbar.css"
 const NavbarExtra = () => {
   return (
     <div className="navbar p-8">
-      <div className="navbar-start">
+      {/* <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg
@@ -46,10 +46,10 @@ const NavbarExtra = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
       <div className="navbar-center logo">
         <Link to="/">
-            <h2 className="font-bold text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#1D2671] to-[#C33764]">DESIGN<span className="">XCEL</span></h2>
+            <h2 className="font-bold text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#1D2671] to-[#C33764] text-center">DESIGN<span className="">XCEL</span></h2>
         </Link>
       </div>
     </div>
