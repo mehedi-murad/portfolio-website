@@ -20,7 +20,7 @@ const ServiceDetails = () => {
                     <h2 className='text-5xl font-bold py-10'>Category</h2>
                     <ul className='menu space-y-4'>
                         <li className=''>
-                            <NavLink to="/serviceDetails/web">Web Development</NavLink>
+                            <NavLink to="/serviceDetails/web" checked="checked">Web Development</NavLink>
                         </li>
                         <li>
                             <NavLink to="/serviceDetails/ui">UI/UX Design</NavLink>

@@ -1,5 +1,5 @@
 import { FaBehance, FaDribbble, FaFacebookF, FaGithub, FaLinkedin, FaLocationArrow, FaMailBulk } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Footer.css'
 
 
@@ -18,23 +18,23 @@ const Footer = () => {
             <div className="footerLink text-white text-center">
                 <h2 className="text-2xl uppercase font-semibold my-2">Useful Links</h2>
                 <ul>
-                    <li>
+                    <li to="/">
                     <a>Home</a>
                     </li>
                     <li>
-                    <a>About</a>
+                    <NavLink to="/about">About</NavLink>
+                    </li>
+                    {/* <li>
+                    <NavLink to="/services">Services</NavLink>
+                    </li> */}
+                    <li>
+                    <NavLink to="/resume">Resume</NavLink>
                     </li>
                     <li>
-                    <a>Services</a>
+                    <NavLink to="/blogForum">Blog</NavLink>
                     </li>
                     <li>
-                    <a>Resume</a>
-                    </li>
-                    <li>
-                    <a>Blog</a>
-                    </li>
-                    <li>
-                    <a>Contact</a>
+                    <NavLink to="/contactForm">Contact</NavLink>
                     </li>
                 </ul>
             </div>

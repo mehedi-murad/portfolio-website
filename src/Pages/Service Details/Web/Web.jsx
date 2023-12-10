@@ -4,7 +4,6 @@ import { FaLayerGroup } from "react-icons/fa";
 const Web = () => {
     return (
         <div className="px-20 py-10">
-            https://i.ibb.co/HtH8qBR/5757453-scaled.jpg
             <div>
                 <img className="rounded-lg" src="https://i.ibb.co/WBZ9Wxx/website-development-and-design-1.jpg" alt="" />
             </div>  

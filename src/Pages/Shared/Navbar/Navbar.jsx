@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -26,23 +26,23 @@ const Navbar = () => {
             tabIndex={0}
             className="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
+            <li to="/">
               <a>Home</a>
             </li>
             <li>
-              <a>About</a>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            {/* <li>
+              <NavLink to="/services">Services</NavLink>
+            </li> */}
+            <li>
+              <NavLink to="/resume">Resume</NavLink>
             </li>
             <li>
-              <a>Services</a>
+              <NavLink to="/blogForum">Blog</NavLink>
             </li>
             <li>
-              <a>Resume</a>
-            </li>
-            <li>
-              <a>Blog</a>
-            </li>
-            <li>
-              <a>Contact</a>
+              <NavLink to="/contactForm">Contact</NavLink>
             </li>
           </ul>
         </div>

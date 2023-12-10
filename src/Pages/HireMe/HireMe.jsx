@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HireMe.css'
 import NavbarExtra from '../Shared/Navbar/NavbarExtra';
 import template1 from '../../assets/project/banners.png'
@@ -17,8 +17,13 @@ import { Pagination  } from 'swiper/modules';
 import Accordion from './Accordion';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const HireMe = () => {
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
     return (
         <div>
             <NavbarExtra></NavbarExtra>
@@ -40,7 +45,7 @@ const HireMe = () => {
                 >
                     <div>
                         <SwiperSlide className='mb-20'>
-                            <div className='border-2 border-orange-400 rounded-lg'>
+                            <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template1} alt="" />
                             </div>
                             <div className='text-center mt-5'>
@@ -59,7 +64,7 @@ const HireMe = () => {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <div className='border-2 border-orange-400 rounded-lg'>
+                            <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template2} alt="" />
                             </div>
                             <div className='text-center mt-5'>
@@ -77,7 +82,7 @@ const HireMe = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='border-2 border-orange-400 rounded-lg'>
+                            <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template3} alt="" />
                             </div>
                             <div className='text-center mt-5'>
@@ -95,7 +100,7 @@ const HireMe = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='border-2 border-orange-400 rounded-lg'>
+                            <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template2} alt="" />
                             </div>
                             <div className='text-center mt-5'>
@@ -113,7 +118,7 @@ const HireMe = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='border-2 border-orange-400 rounded-lg'>
+                            <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template1} alt="" />
                             </div>
                             <div className='text-center mt-5'>

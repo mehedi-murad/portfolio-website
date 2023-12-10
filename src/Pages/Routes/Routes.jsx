@@ -7,6 +7,10 @@ import ServiceDetails from "../Service Details/ServiceDetails";
 import Web from "../Service Details/Web/Web";
 import Ui from "../Service Details/Ui/Ui";
 import Graphic from "../Service Details/Graphic/Graphic";
+import Services from "../Services/Services";
+import BlogForum from "../Blog/BlogForum";
+import About from "../About/About";
+import Resume from "../Resume/Resume";
 
 const Routes = createBrowserRouter([
     {
@@ -24,6 +28,22 @@ const Routes = createBrowserRouter([
             {
                 path: '/contactForm',
                 element: <ContactForm></ContactForm>
+            },
+            {
+                path: '/services',
+                element:<Services></Services>
+            },
+            {
+                path: '/blogForum',
+                element:<BlogForum></BlogForum>
+            },
+            {
+                path: '/about',
+                element: <About></About>
+            },
+            {
+                path: '/resume',
+                element:<Resume></Resume>
             }
         ]
     },
