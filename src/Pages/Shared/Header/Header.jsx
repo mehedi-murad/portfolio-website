@@ -2,6 +2,9 @@ import './Header.css'
 import image from "../../../assets/Cover/developer1.png"
 import { FaDownload } from "react-icons/fa";
 
+
+    
+
 const Header = () => {
     return (
         <div className='headerBg'>

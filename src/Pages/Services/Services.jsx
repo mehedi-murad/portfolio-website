@@ -5,7 +5,9 @@ import './Services.css'
 import { Parallax } from "react-parallax";
 import webBanner from "../../assets/Cover/webbg.png"
 
+
 const Services = () => {
+    
     return (
         <Parallax blur={2.5} bgImage={webBanner} bgImageAlt="the cat" strength={200}>
         <div className="p-10 webBg">

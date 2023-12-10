@@ -10,6 +10,11 @@ import '@smastrom/react-rating/style.css'
 import { Navigation } from 'swiper/modules';
 import { Rating } from '@smastrom/react-rating';
 import { FaQuoteLeft } from 'react-icons/fa';
+import Aos from "aos"
+import "aos/dist/aos.css"
+
+
+    
 
 
 const Testimonial = () => {
@@ -20,6 +25,10 @@ const Testimonial = () => {
         .then(data => {
             setTestimonial(data)
         })
+    },[])
+
+    useEffect(()=>{
+        Aos.init({duration:2000})
     },[])
     return (
         <div className='md:p-20 mt-10 mb-10'>
@@ -43,8 +52,10 @@ const Testimonial = () => {
                     <FaQuoteLeft></FaQuoteLeft>
                 </div>
                 <p className=' text-center text-gray-400'>{testimonial.desc}</p>
-                <h2 className="text-3xl text-center font-bold uppercase text-gray-700">{testimonial.name}</h2>
-                <p className=' text-center text-gray-400'>{testimonial.author_designation}</p>
+                <div data-aos="fade-up">
+                    <h2 className="text-3xl text-center font-bold uppercase text-gray-700">{testimonial.name}</h2>
+                    <p className=' text-center text-gray-400'>{testimonial.author_designation}</p>
+                </div>
             </SwiperSlide>)
             }
             </Swiper>
