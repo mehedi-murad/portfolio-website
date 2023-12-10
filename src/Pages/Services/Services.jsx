@@ -4,6 +4,7 @@ import vectorImg from "../../assets/vector.png"
 import './Services.css'
 import { Parallax } from "react-parallax";
 import webBanner from "../../assets/Cover/webbg.png"
+import { Link } from "react-router-dom";
 
 
 const Services = () => {
@@ -38,7 +39,9 @@ const Services = () => {
                             <FaAngleDoubleRight /><p> MongoDB</p>
                         </div>
                         <div>
-                            <button className="bg-gray-600 px-4 py-2 text-white font-semibold rounded-lg mt-10 btn-block">Service Details </button>
+                            <Link to="/serviceDetails">
+                                <button className="bg-gray-600 px-4 py-2 text-white font-semibold rounded-lg mt-10 btn-block">Service Details </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -67,7 +70,9 @@ const Services = () => {
                             <FaAngleDoubleRight /><p> Photoshop</p>
                         </div>
                         <div>
-                            <button className="bg-gray-600 px-4 py-2 text-white font-semibold rounded-lg mt-10 btn-block">Service Details </button>
+                            <Link to="/serviceDetails/web">
+                                <button className="bg-gray-600 px-4 py-2 text-white font-semibold rounded-lg mt-10 btn-block">Service Details </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

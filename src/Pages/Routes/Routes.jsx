@@ -3,6 +3,10 @@ import Root from "../Root/Root";
 import Home from "../Home/Home";
 import HireMe from "../HireMe/HireMe";
 import ContactForm from "../Contact/ContactForm";
+import ServiceDetails from "../Service Details/ServiceDetails";
+import Web from "../Service Details/Web/Web";
+import Ui from "../Service Details/Ui/Ui";
+import Graphic from "../Service Details/Graphic/Graphic";
 
 const Routes = createBrowserRouter([
     {
@@ -20,6 +24,24 @@ const Routes = createBrowserRouter([
             {
                 path: '/contactForm',
                 element: <ContactForm></ContactForm>
+            }
+        ]
+    },
+    {
+        path: 'serviceDetails',
+        element: <ServiceDetails></ServiceDetails>,
+        children:[
+            {
+                path: 'web',
+                element: <Web></Web>
+            },
+            {
+                path: 'ui',
+                element:<Ui></Ui>
+            },
+            {
+                path: 'graphic',
+                element:<Graphic></Graphic>
             }
         ]
     }
