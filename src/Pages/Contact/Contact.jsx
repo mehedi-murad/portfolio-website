@@ -21,6 +21,10 @@ const Contact = () => {
                         <input type="text" placeholder="Subject" className="input input-bordered input-warning  w-full" /> <br />
                     
                         <textarea className="textarea textarea-warning w-full" placeholder="Your Message"></textarea>
+                        <input
+                         className="bg-gray-600 px-4 py-2 text-white font-semibold rounded-lg mt-10 btn-block"
+                        type="submit"
+                    />
                     </form>
                 </div>
 
