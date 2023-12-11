@@ -28,7 +28,7 @@ const Header = () => {
             <div className='text-center space-y-4'>
                 <h2 className='text-5xl text-gray-700 font-semibold'>Hello! I'm</h2>
                 <h1 className='text-7xl md:text-[80px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#E76A18] to-[#C33764]'>Mehedi Hasan</h1>
-                <p className='text-xl tracking-widest text-gray-700 font-bold'>MERN Stack Developer(Specialized on Front-end)</p>
+                <p className='text-xl tracking-widest text-gray-700 font-bold'>WEB Developer(Specialized on Front-end)</p>
                     <div className='btn btn-outline'>
                         <button onClick={onButtonClick} className='uppercase text-xl text-gray-700 hover:text-white'>get resume </button><FaDownload />
                         

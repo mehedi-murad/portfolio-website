@@ -4,6 +4,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { Helmet } from "react-helmet-async";
 import HomeButton from "../Components/HomeButton/HomeButton";
+import { Link } from "react-router-dom";
 
 const BlogForum = () => {
     const [blogs, setBlogs] = useState([])
@@ -21,7 +22,7 @@ const BlogForum = () => {
     return (
         <div className="bg-gray-100 p-5 md:p-20">
             <Helmet>
-                <title>DesignXcel | Blog</title>
+                <title>Mehedi's Portfolio | Blog</title>
             </Helmet>
             <HomeButton></HomeButton>
             <h2 className="text-4xl uppercase font-bold text-center my-20">Blogs</h2>
@@ -33,10 +34,13 @@ const BlogForum = () => {
                         <div className="card-body">
                             <h2 className="card-title font-bold text-xl">{blog.title.slice(0,50)}</h2>
                             {/* <p>{blog.details.slice(0,150)}</p> */}
-                            <div className="card-actions flex items-center justify-start text-orange-500">
-                                <h2 className="font-bold">Read More</h2>
-                                <FaArrowRight></FaArrowRight>
-                            </div>
+                            <Link to={`/blogDetails/${blog._id}`}>
+                                <div className="card-actions flex items-center justify-start text-orange-500">
+                                    <h2 className="font-bold">Read More</h2>
+                                    <FaArrowRight></FaArrowRight>
+                                </div>
+                            </Link>
+                            
                         </div>
                     </div>
                     )

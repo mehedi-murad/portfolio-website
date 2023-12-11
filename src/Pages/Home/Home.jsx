@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet-async";
 import Blog from "../Blog/Blog";
 import Contact from "../Contact/Contact";
 import BottomFooter from "../Footer/BottomFooter";
@@ -15,6 +16,9 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Mehedi's Portfolio | Home</title>
+            </Helmet>
             <div className="homeBG min-h-screen">
                 <Navbar></Navbar>
                 <Header></Header>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { Link } from "react-router-dom";
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([])
@@ -18,6 +19,7 @@ const Blog = () => {
     },[])
     return (
         <div className="bg-gray-100 p-5 md:p-20">
+            
             <h2 className="text-4xl uppercase font-bold text-center my-20">Blogs</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 ld:grid-cols-4 gap-4 max-w-7xl mx-auto mb-10">
             {
@@ -27,10 +29,12 @@ const Blog = () => {
                         <div className="card-body">
                             <h2 className="card-title font-bold text-xl">{blog.title.slice(0,50)}</h2>
                             {/* <p>{blog.details.slice(0,150)}</p> */}
-                            <div className="card-actions flex items-center justify-start text-orange-500">
-                                <h2 className="font-bold">Read More</h2>
-                                <FaArrowRight></FaArrowRight>
-                            </div>
+                            <Link to={`/blogDetails/${blog._id}`}>
+                                <div className="card-actions flex items-center justify-start text-orange-500">
+                                    <h2 className="font-bold">Read More</h2>
+                                    <FaArrowRight></FaArrowRight>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     )

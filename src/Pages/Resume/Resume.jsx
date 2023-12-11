@@ -2,14 +2,14 @@ import React from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import { Helmet } from 'react-helmet-async';
 import './Resume.css'
-import ResumeTemp from "../../assets/Resume/resume.pdf"
+import ResumeTemp from "../../assets/Resume/ResumePortfolio.pdf"
 import Footer from '../Footer/Footer';
 
 const Resume = () => {
     return (
         <div>
             <Helmet>
-                <title>DesignXcel | Resume</title>
+                <title>Mehedi's Portfolio | Resume</title>
             </Helmet>
             <Navbar></Navbar>
             <div className="resume">

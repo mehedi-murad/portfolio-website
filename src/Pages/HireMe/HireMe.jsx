@@ -19,6 +19,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { Helmet } from 'react-helmet-async';
 
 const HireMe = () => {
     useEffect(()=>{
@@ -26,6 +27,9 @@ const HireMe = () => {
     },[])
     return (
         <div>
+            <Helmet>
+                <title>Mehedi's Portfolio | Hire Me</title>
+            </Helmet>
             <NavbarExtra></NavbarExtra>
             <div className='HireMeBanner'>
                 <h1>Hire ME!</h1>
@@ -50,15 +54,21 @@ const HireMe = () => {
                             </div>
                             <div className='text-center mt-5'>
                                 {/* <h2 className='mt-5 text-xl font-semibold text-gray-400'>Template 1</h2> */}
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://diagnostic-center-manage-b294b.web.app/">Preview</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/diagnostic-center-management-system-client">Client Side</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/diagnostic-center-management-system-server">Server Side</a>
-                                </button>
+                                <Link to="https://diagnostic-center-manage-b294b.web.app/">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Preview
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/diagnostic-center-management-system-client">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Client Side
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/diagnostic-center-management-system-server">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Server Side
+                                    </button>
+                                </Link>
                                 <h2 className='mt-5 text-xl font-semibold text-gray-400'>TechMed</h2>
                             </div>
                         </SwiperSlide>
@@ -69,15 +79,21 @@ const HireMe = () => {
                             </div>
                             <div className='text-center mt-5'>
                                 {/* <h2 className='mt-5 text-xl font-semibold text-gray-400'>Template 1</h2> */}
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://job-portal-7afad.web.app/">Preview</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/job-genius-client-side">Client Side</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/job-genius-server-side">Server Side</a>
-                                </button>
+                                <Link to="https://job-portal-7afad.web.app/">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Preview
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/job-genius-client-side">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Client Side
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/job-genius-server-side">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Server Side
+                                    </button>
+                                </Link>
                                 <h2 className='mt-5 text-xl font-semibold text-gray-400'>Job Genius</h2>
                             </div>
                         </SwiperSlide>
@@ -86,16 +102,22 @@ const HireMe = () => {
                                 <img className='rounded-lg h-20 md:h-72' src={template3} alt="" />
                             </div>
                             <div className='text-center mt-5'>
-                                {/* <h2 className='mt-5 text-xl font-semibold text-gray-400'>Template 1</h2> */}
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://fashion-brand-4d7fd.web.app/">Preview</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/menzwo-option-fashion-brand">Client Side</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/menzwo-option-fashion-brand-server">Server Side</a>
-                                </button>
+                                
+                                <Link to="https://fashion-brand-4d7fd.web.app/">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Preview
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/menzwo-option-fashion-brand">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Client Side
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/menzwo-option-fashion-brand-server">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Server Side
+                                    </button>
+                                </Link>
                                 <h2 className='mt-5 text-xl font-semibold text-gray-400'>Menzwo Option</h2>
                             </div>
                         </SwiperSlide>
@@ -105,33 +127,45 @@ const HireMe = () => {
                             </div>
                             <div className='text-center mt-5'>
                                 {/* <h2 className='mt-5 text-xl font-semibold text-gray-400'>Template 1</h2> */}
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://job-portal-7afad.web.app/">Preview</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/job-genius-client-side">Client Side</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/job-genius-server-side">Server Side</a>
-                                </button>
+                                <Link to="https://job-portal-7afad.web.app/">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Preview
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/job-genius-client-side">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Client Side
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/job-genius-server-side">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Server Side
+                                    </button>
+                                </Link>
                                 <h2 className='mt-5 text-xl font-semibold text-gray-400'>Job Genius</h2>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
+                        <SwiperSlide className='mb-20'>
                             <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template1} alt="" />
                             </div>
                             <div className='text-center mt-5'>
-                                {/* <h2 className='mt-5 text-xl font-semibold text-gray-400'>Template 1</h2> */}
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://diagnostic-center-manage-b294b.web.app/">Preview</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/diagnostic-center-management-system-client">Client Side</a>
-                                </button>
-                                <button className='btn bg-orange-400 text-white'>
-                                    <a href="https://github.com/mehedi-murad/diagnostic-center-management-system-server">Server Side</a>
-                                </button>
+                                
+                                <Link to="https://diagnostic-center-manage-b294b.web.app/">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Preview
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/diagnostic-center-management-system-client">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Client Side
+                                    </button>
+                                </Link>
+                                <Link to="https://github.com/mehedi-murad/diagnostic-center-management-system-server">
+                                    <button className='btn bg-orange-400 text-white'>
+                                        Server Side
+                                    </button>
+                                </Link>
                                 <h2 className='mt-5 text-xl font-semibold text-gray-400'>TechMed</h2>
                             </div>
                         </SwiperSlide>

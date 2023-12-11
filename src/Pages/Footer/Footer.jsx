@@ -55,7 +55,7 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div className="bg-[#E76A18] hover:bg-white hover:text-gray-700 p-2 rounded-md">
-                        <Link to="https://www.linkedin.com/in/mehedi-murad-183a11208/">
+                        <Link to="https://www.linkedin.com/in/mehedi-murad/">
                             <FaLinkedin></FaLinkedin>
                         </Link>
                     </div>

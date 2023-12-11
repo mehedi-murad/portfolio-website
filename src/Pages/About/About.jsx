@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <Helmet>
-        <title>DesignXcel | About</title>
+        <title>Mehedi's Portfolio | About</title>
       </Helmet>
       <Navbar></Navbar>
       <div className="about">

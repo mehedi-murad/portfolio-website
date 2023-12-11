@@ -11,6 +11,7 @@ import Services from "../Services/Services";
 import BlogForum from "../Blog/BlogForum";
 import About from "../About/About";
 import Resume from "../Resume/Resume";
+import BlogDetails from "../Blog/BlogDetails";
 
 const Routes = createBrowserRouter([
     {
@@ -44,6 +45,11 @@ const Routes = createBrowserRouter([
             {
                 path: '/resume',
                 element:<Resume></Resume>
+            },
+            {
+                path: '/blogDetails/:id',
+                element: <BlogDetails></BlogDetails>,
+                loader: ({params}) => fetch(`https://mehedi-portfolio-three.vercel.app/blogs/${params.id}`)
             }
         ]
     },
