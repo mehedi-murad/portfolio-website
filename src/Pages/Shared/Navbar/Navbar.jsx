@@ -26,8 +26,8 @@ const Navbar = () => {
             tabIndex={0}
             className="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li to="/">
-              <a>Home</a>
+            <li>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>

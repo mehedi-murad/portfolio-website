@@ -42,7 +42,7 @@ const ContactForm = () => {
                         </div>
                         <div>
                             <h2 className="text-xl font-bold">Address</h2>
-                            <p className="text-gray-500">Eastern Housing, Mirpur, 12</p>
+                            <p className="">Eastern Housing, Mirpur, 12</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -51,7 +51,7 @@ const ContactForm = () => {
                         </div>
                         <div>
                             <h2 className="text-xl font-bold">Phone</h2>
-                            <p className="text-gray-500">+880 - 1615 834 393</p>
+                            <p className="">+880 - 1615 834 393</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -60,7 +60,7 @@ const ContactForm = () => {
                         </div>
                         <div>
                             <h2 className="text-xl font-bold">Email</h2>
-                            <p className="text-gray-500">mehedimurad08@gmail.com</p>
+                            <p className="">mehedimurad08@gmail.com</p>
                         </div>
                     </div>
                 </div>
