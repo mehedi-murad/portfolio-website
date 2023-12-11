@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import { Helmet } from 'react-helmet-async';
 import './Resume.css'
-import ResumeTemp from "../../assets/Resume/resume.jpg"
+import ResumeTemp from "../../assets/Resume/resume.pdf"
 import Footer from '../Footer/Footer';
 
 const Resume = () => {
@@ -17,7 +17,7 @@ const Resume = () => {
             </div>
             <div className='max-w-7xl mx-auto p-10 bg-gray-200'>
                 <div className='flex justify-center items-center'>
-                    <img className='rounded-lg' src={ResumeTemp} alt="" />
+                <iframe src={ResumeTemp} width="100%" height="900px" />
                 </div>
             </div>
             <Footer></Footer>

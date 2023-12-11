@@ -7,7 +7,7 @@ import { FaDownload } from "react-icons/fa";
 
 const Header = () => {
     const onButtonClick = () => {
-        fetch("Resume of Mehedi Hasan.pdf").then((response) => {
+        fetch("Resume Portfolio.pdf").then((response) => {
             response.blob().then((blob) => {
              
                 // Creating new object of PDF file
@@ -17,7 +17,7 @@ const Header = () => {
                 // Setting various property values
                 let alink = document.createElement("a");
                 alink.href = fileURL;
-                alink.download = "Resume of Mehedi Hasan.pdf";
+                alink.download = "Resume of Mehedi Hasan Murad.pdf";
                 alink.click();
             });
         });
