@@ -18,8 +18,8 @@ const Footer = () => {
             <div className="footerLink text-white text-center">
                 <h2 className="text-2xl uppercase font-semibold my-2">Useful Links</h2>
                 <ul>
-                    <li to="/">
-                    <a>Home</a>
+                    <li>
+                    <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
                     <NavLink to="/about">About</NavLink>

@@ -10,7 +10,7 @@ const About = () => {
         <title>DesignXcel | About</title>
       </Helmet>
       <Navbar></Navbar>
-      <div className="HireMeBanner">
+      <div className="about">
         <h1>About</h1>
       </div>
       <div className="aboutBG">

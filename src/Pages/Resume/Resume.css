@@ -1,14 +1,9 @@
-.aboutBG{
-    background-image: url(../../assets/about.jpg);
-    background-size: cover;
-}
-
-.about{
+.resume{
     background-image: url('../../assets/Cover/webbg.png');
     background-size: cover;
     padding: 60px 40px;
 }
-.about h1{
+.resume h1{
     text-align: center;
     font-size: 4em;
     font-weight: bold;
