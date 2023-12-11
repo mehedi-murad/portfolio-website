@@ -39,6 +39,9 @@ const Navbar = () => {
               <NavLink to="/resume">Resume</NavLink>
             </li>
             <li>
+              <NavLink to="/hireMe">Hire Me</NavLink>
+            </li>
+            <li>
               <NavLink to="/blogForum">Blog</NavLink>
             </li>
             <li>
@@ -53,9 +56,11 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-end">
+      
         <Link to="/hireMe">
           <button className="btn btn-outline hidden lg:block">HIRE ME</button>
         </Link>
+
       </div>
     </div>
   );

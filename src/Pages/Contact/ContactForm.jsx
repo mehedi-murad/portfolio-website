@@ -1,6 +1,9 @@
 import { FaGripLinesVertical, FaMailBulk, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import './Contact.css'
 import Swal from "sweetalert2";
+import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
+import Navbar from "../Shared/Navbar/Navbar";
 
 
 const ContactForm = () => {
@@ -37,7 +40,13 @@ const ContactForm = () => {
         })
     }
     return (
-        <div className="contactHeader max-w-7xl mx-auto py-10">
+        <div>
+            <Helmet>
+                <title>Mehedi's Portfolio | Contact</title>
+            </Helmet>
+            <Navbar></Navbar>
+            <div className="contactHeader max-w-7xl mx-auto py-10">
+            
             <div className="flex gap-6 items-center text-gray-400 justify-center">
                 <FaGripLinesVertical />
                 <h1 className="text-xl font-semibold">Contact with me</h1>
@@ -91,6 +100,9 @@ const ContactForm = () => {
                     </div>
                 </div>
             </div>
+            
+        </div>
+        <Footer></Footer>
         </div>
     );
 };
