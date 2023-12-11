@@ -8,7 +8,7 @@ import HomeButton from "../Components/HomeButton/HomeButton";
 const BlogForum = () => {
     const [blogs, setBlogs] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/blogs')
+        fetch('https://mehedi-portfolio-three.vercel.app/blogs')
         .then(res => res.json())
         .then(data => {
             setBlogs(data)

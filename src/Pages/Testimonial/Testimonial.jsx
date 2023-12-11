@@ -20,7 +20,7 @@ import "aos/dist/aos.css"
 const Testimonial = () => {
     const [testimonial, setTestimonial] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/testimonial')
+        fetch('https://mehedi-portfolio-three.vercel.app/testimonial')
         .then(res => res.json())
         .then(data => {
             setTestimonial(data)

@@ -12,7 +12,7 @@ const Gallery = () => {
     const [graphicImage, setGraphicImage] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/gallery')
+        fetch('https://mehedi-portfolio-three.vercel.app')
         .then(res => res.json())
         .then(data => {
             setAllImage(data)
@@ -20,7 +20,7 @@ const Gallery = () => {
     },[])
 
     useEffect(() => {
-        fetch('http://localhost:5000/gallery/web')
+        fetch('https://mehedi-portfolio-three.vercel.app/web')
         .then(res => res.json())
         .then(data => {
             setWebImage(data)
@@ -28,7 +28,7 @@ const Gallery = () => {
     },[])
 
     useEffect(() => {
-        fetch('http://localhost:5000/gallery/ui')
+        fetch('https://mehedi-portfolio-three.vercel.app/ui')
         .then(res => res.json())
         .then(data => {
             setUiImage(data)
@@ -36,7 +36,7 @@ const Gallery = () => {
     },[])
 
     useEffect(() => {
-        fetch('http://localhost:5000/gallery/graphic')
+        fetch('https://mehedi-portfolio-three.vercel.app/graphic')
         .then(res => res.json())
         .then(data => {
             setGraphicImage(data)

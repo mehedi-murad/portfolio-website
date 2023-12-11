@@ -16,9 +16,7 @@ const Resume = () => {
                 <h1>My Resume</h1>
             </div>
             <div className='max-w-7xl mx-auto p-10 bg-gray-200'>
-                <div className='flex justify-center items-center'>
                 <iframe src={ResumeTemp} width="100%" height="900px" />
-                </div>
             </div>
             <Footer></Footer>
         </div>
