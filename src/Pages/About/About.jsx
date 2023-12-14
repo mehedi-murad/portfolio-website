@@ -3,7 +3,14 @@ import profile from "../../assets/photo.jpg";
 import Navbar from "../Shared/Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import './About.css'
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
+
 const About = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+},[])
   return (
     <div>
       <Helmet>
@@ -17,13 +24,13 @@ const About = () => {
       <div className="max-w-7xl mx-auto py-20 px-8 text-white bg-gray-700">
         <div className="flex justify-center items-center gap-8 mb-5">
           <div>
-            <img
+            <img data-aos="fade-right"
               className="rounded-full w-28 border-orange-400 border-4"
               src={profile}
               alt=""
             />
           </div>
-          <div>
+          <div data-aos="fade-left">
             <h2 className="text-3xl font-bold">Mehedi Hasan Murad</h2>
             <h2 className="">
               MERN Stack Developer (Specialized in Front-End)

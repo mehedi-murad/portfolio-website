@@ -1,7 +1,9 @@
 import { FaGripLinesVertical, FaMailBulk, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import './Contact.css'
 import Swal from "sweetalert2";
-
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 const Contact = () => {
     const handleSubmit = e => {
@@ -36,6 +38,9 @@ const Contact = () => {
             }
         })
     }
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
     return (
         <div className="contactHeader max-w-7xl mx-auto py-10">
             <div className="flex gap-6 items-center text-gray-400 justify-center">
@@ -44,7 +49,7 @@ const Contact = () => {
             </div>
             <h1 className=" text-center text-4xl font-bold mt-10">I WANT TO HEAR FROM YOU</h1>
             <div className="flex flex-col md:flex-row items-center justify-evenly gap-8 p-20">
-                <div className="md:w-2/3 mx-auto">
+                <div data-aos="fade-right" className="md:w-2/3 mx-auto">
                     <form onSubmit={handleSubmit} className="space-y-4 w-full">
                         <input type="text" name="name" placeholder="Your Name" className="input input-bordered input-warning  w-full" required /> <br />
                         <div className="flex gap-4">
@@ -61,7 +66,7 @@ const Contact = () => {
                     </form>
                 </div>
 
-                <div className="space-y-4">
+                <div data-aos="fade-left" className="space-y-4">
                     <div className="flex items-center gap-4">
                         <div className="bg-[#E76A18] hover:bg-gray-500 hover:text-white p-4 text-2xl rounded-md text-white">
                             <FaMapMarkerAlt />
