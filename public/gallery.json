@@ -2,68 +2,136 @@
     {
         "title":"Graphic Design",
         "category":"graphic",
-        "image":"https://i.ibb.co/q0XgcSP/Microsoft-Copilot.jpg"
-    },
-    {
-        "title":"Ui/UX Design",
-        "category":"ui",
-        "image":"https://i.ibb.co/JF6Lkwd/4307057.jpg"
-    },
-    {
-        "title":"Ui/UX Design",
-        "category":"ui",
-        "image":"https://i.ibb.co/f0tJbW3/5726865.jpg"
-    },
-    {
-        "title":"Ui/UX Design",
-        "category":"ui",
-        "image":"https://i.ibb.co/PQSKsJs/5757453.jpg"
-    },
-    {
-        "title":"Ui/UX Design",
-        "category":"ui",
-        "image":"https://i.ibb.co/DKTkJZR/5781555.jpg"
-    },
-    {
-        "title":"Web Design",
-        "category":"web",
-        "image":"https://i.ibb.co/Bt1WTsW/businessman-communicaiton-connected-devices-concept.jpg"
-    },
-    {
-        "title":"Web Design",
-        "category":"web",
-        "image":"https://i.ibb.co/McmpFr3/close-up-image-programer-working-his-desk-office.jpg"
+        "image":"https://i.ibb.co/FWFkgn5/Horsemen.jpg"
     },
     {
         "title":"Graphic Design",
         "category":"graphic",
-        "image":"https://i.ibb.co/0npT08j/graphic-designer-drawing-graphics-tablet-workplace.jpg"
+        "image":"https://i.ibb.co/0BXXzx9/Sunset-1.jpg"
+    },
+
+    {
+        "title":"Ui/UX Design",
+        "category":"ui",
+        "image":"https://i.ibb.co/mhgscb5/3-Home.png"
     },
     {
-        "title":"Graphic Design",
-        "category":"graphic",
-        "image":"https://i.ibb.co/N3SN4h8/graphic-designer-woman-working-laptop.jpg"
+        "title":"Ui/UX Design",
+        "category":"ui",
+        "image":"https://i.ibb.co/b60Ct2R/mockup-1.jpg"
+    },
+    {
+        "title":"Ui/UX Design",
+        "category":"ui",
+        "image":"https://i.ibb.co/FXj9qwj/Group-1242.jpg"
+    },
+
+
+    {
+        "title":"Web Design",
+        "category":"web",
+        "image":"https://i.ibb.co/ZdnWm3X/image-1.png"
     },
     {
         "title":"Web Design",
         "category":"web",
-        "image":"https://i.ibb.co/M6mT5bj/homepage-seen-computer-screen.jpg"
+        "image":"https://i.ibb.co/SyGFsYq/image-10.png"
     },
     {
         "title":"Web Design",
         "category":"web",
-        "image":"https://i.ibb.co/0r8Q2J2/html-system-websites-concept.jpg"
+        "image":"https://i.ibb.co/HD7mMDf/image-2.png"
     },
     {
         "title":"Web Design",
         "category":"web",
-        "image":"https://i.ibb.co/d4dPjhz/marketing-strategy-planning-strategy-concept.jpg"
+        "image":"https://i.ibb.co/72xVnBN/image-4.png"
     },
     {
         "title":"Web Design",
         "category":"web",
-        "image":"https://i.ibb.co/Y3PQsy2/web-design-1.jpg"
+        "image":"https://i.ibb.co/vHKR18s/image-3.png"
+    },
+    {
+        "title":"Web Design",
+        "category":"web",
+        "image":"https://i.ibb.co/d5HhTBY/image-6.png"
+    },
+    {
+        "title":"Web Design",
+        "category":"web",
+        "image":"https://i.ibb.co/PD4hyWr/image-5.png"
+    },
+    {
+        "title":"Web Design",
+        "category":"web",
+        "image":"https://i.ibb.co/TKb5SxP/image-7.png"
+    },
+    {
+        "title":"Web Design",
+        "category":"web",
+        "image":"https://i.ibb.co/m5Ghb06/image-8.png"
+    },
+    {
+        "title":"Web Design",
+        "category":"web",
+        "image":"https://i.ibb.co/BCZD0XN/image-9.png"
+    },
+
+
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/28bmx0k/Penfield-presentation.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/bmC4vJr/MCG-1-image.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/wC4cSst/is.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/1T0tvrp/Infinite-Green.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/zGyXMJF/HT-mockup.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/SyG4YcW/Image-1.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/0jzwJDt/Image-1-2.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/yy8Wd3x/FDL.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/t4GKLx3/fabricode.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/kc2PP99/A3D-1.jpg"
+    },
+    {
+        "title":"Logo Design",
+        "category":"logo",
+        "image":"https://i.ibb.co/jvxDgsQ/airvila.jpg"
     }
-    
-    
 ]

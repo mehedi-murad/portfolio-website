@@ -10,6 +10,7 @@ const Gallery = () => {
     const [webImage, setWebImage] = useState([])
     const [uiImage, setUiImage] = useState([])
     const [graphicImage, setGraphicImage] = useState([])
+    const [logoImage, setLogoImage] = useState([])
 
     useEffect(() => {
         fetch('https://mehedi-portfolio-three.vercel.app/gallery')
@@ -40,6 +41,14 @@ const Gallery = () => {
         .then(res => res.json())
         .then(data => {
             setGraphicImage(data)
+        })
+    },[])
+
+    useEffect(() => {
+        fetch('https://mehedi-portfolio-three.vercel.app/gallery/logo')
+        .then(res => res.json())
+        .then(data => {
+            setLogoImage(data)
         })
     },[])
 
@@ -110,12 +119,21 @@ const Gallery = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div data-aos="fade-up" className='p-20'>
-                        <h2 className='text-center font-bold text-2xl'>No content Found yet!</h2>
+                    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-20'>
+                        {
+                            logoImage.map(image  =>
+                                <div data-aos="zoom-out" key={image._id} className='container'>
+                                    <img className='h-48 w-[100%] rounded-lg image' src={image.image} alt="" />
+                                    <div class="overlay">{image.title}</div>
+                                </div>
+                                )
+                        }
                     </div>
                 </TabPanel>
+                
             </Tabs>
         </div>
+            <p className='text-center text-red-700 font-semibold text-sm'>* These particular items are copywrite protected. Don't use without persmission.*</p>
         </div>
     );
 };
