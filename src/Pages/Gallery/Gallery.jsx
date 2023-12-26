@@ -58,7 +58,7 @@ const Gallery = () => {
 
     return (
         <div className='bg-gray-100 py-20 galleryBg'>
-            <h1 className='text-4xl font-bold text-center'>Portfolio Gallery</h1>
+            <h1 data-aos="fade-up" className='text-4xl font-bold text-center'>Portfolio Gallery</h1>
             <div className='max-w-7xl mx-auto py-10'>
             <Tabs className="font-semibold">
                 <TabList>
@@ -119,17 +119,19 @@ const Gallery = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-20'>
+                    <div onClick={() => setShowModal(true)} className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-20'>
+                    
                         {
                             logoImage.map(image  =>
                                 <div data-aos="zoom-out" key={image._id} className='container'>
-                                    <img className='h-48 w-[100%] rounded-lg image' src={image.image} alt="" />
-                                    <div class="overlay">{image.title}</div>
+                                        <img className='h-48 w-[100%] rounded-lg image' src={image.image} alt="" />
+                                        <div class="overlay">{image.title}</div>
                                 </div>
                                 )
                         }
                     </div>
                 </TabPanel>
+                
                 
             </Tabs>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import { Helmet } from 'react-helmet-async';
 import './Resume.css'
-import ResumeTemp from "../../assets/Resume/ResumePortfolio.pdf"
+import ResumeTemp from "../../assets/Resume/portfolio.pdf"
 import Footer from '../Footer/Footer';
 
 const Resume = () => {

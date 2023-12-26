@@ -5,16 +5,22 @@ import './Services.css'
 import { Parallax } from "react-parallax";
 import webBanner from "../../assets/Cover/webbg.png"
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 
 const Services = () => {
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    },[])
     
     return (
         <Parallax blur={2.5} bgImage={webBanner} bgImageAlt="the cat" strength={200}>
         <div className="p-10 webBg">
-            <h1 className="font-bold text-4xl text-center">My Expertise</h1>
+            <h1 data-aos="fade-up" className="font-bold text-4xl text-center">My Expertise</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto md:p-20 mt-10">
-            <div className="bg-[#FFF3EA] h-[400px] text-gray-700 p-20 space-y-4 rounded-lg flip-box">
+            <div data-aos="fade-right" className="bg-[#FFF3EA] h-[400px] text-gray-700 p-20 space-y-4 rounded-lg flip-box">
                 <div className="flip-box-inner">
                     <div className="flip-box-front">
                         <div className="mb-8">
@@ -48,7 +54,7 @@ const Services = () => {
             </div>
 
 
-            <div className="bg-[#FFF3EA] h-[400px] text-gray-700 p-20 space-y-4 rounded-lg flip-box">
+            <div data-aos="fade-left" className="bg-[#FFF3EA] h-[400px] text-gray-700 p-20 space-y-4 rounded-lg flip-box">
                 <div className="flip-box-inner">
                     <div className="flip-box-front">
                         <div className="mb-8">

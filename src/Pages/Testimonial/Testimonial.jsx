@@ -45,13 +45,13 @@ const Testimonial = () => {
                 </div>
                 <div className="avatar flex justify-center items-center">
                     <div className="w-16 rounded-full">
-                        <img src={testimonial.author_img} />
+                        <img data-aos="fade-left" src={testimonial.author_img} />
                     </div>
                 </div>
                 <div className="text-5xl text-cyan-400 flex justify-center">
                     <FaQuoteLeft></FaQuoteLeft>
                 </div>
-                <p className=' text-center text-gray-400'>{testimonial.desc}</p>
+                <p data-aos="fade-right" className=' text-center text-gray-400'>{testimonial.desc}</p>
                 <div data-aos="fade-up">
                     <h2 className="text-3xl text-center font-bold uppercase text-gray-700">{testimonial.name}</h2>
                     <p className=' text-center text-gray-400'>{testimonial.author_designation}</p>

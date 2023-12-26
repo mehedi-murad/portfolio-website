@@ -20,7 +20,7 @@ const Blog = () => {
     return (
         <div className="bg-gray-100 p-5 md:p-20">
             
-            <h2 className="text-4xl uppercase font-bold text-center my-20">Blogs</h2>
+            <h2 data-aos="fade-up" className="text-4xl uppercase font-bold text-center my-20">Blogs</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 ld:grid-cols-4 gap-4 max-w-7xl mx-auto mb-10">
             {
                 blogs.map(blog => 

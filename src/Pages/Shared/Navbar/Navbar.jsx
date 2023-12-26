@@ -1,7 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css"
+import { useEffect } from 'react';
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Navbar = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+},[])
   return (
     <div className="navbar p-8">
       <div className="navbar-start">
@@ -52,7 +58,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-center logo">
         <Link to="/">
-            <h2 className="font-bold text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#1D2671] to-[#C33764]">DESIGN<span className="">XCEL</span></h2>
+            <h2 data-aos="fade-up" className="font-bold text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#1D2671] to-[#C33764]">DESIGN<span className="">XCEL</span></h2>
         </Link>
       </div>
       <div className="navbar-end">
