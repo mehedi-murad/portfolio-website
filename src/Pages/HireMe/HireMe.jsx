@@ -52,7 +52,7 @@ const HireMe = () => {
                             <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template1} alt="" />
                             </div>
-                            <div className='text-center mt-5'>
+                            <div className='text-center mt-5 flex flex-col md:flex-row justify-center'>
                                 {/* <h2 className='mt-5 text-xl font-semibold text-gray-400'>Template 1</h2> */}
                                 <Link to="https://diagnostic-center-manage-b294b.web.app/">
                                     <button className='btn bg-orange-400 text-white'>
@@ -69,15 +69,16 @@ const HireMe = () => {
                                         Server Side
                                     </button>
                                 </Link>
-                                <h2 className='mt-5 text-xl font-semibold text-gray-400'>TechMed</h2>
+                                
                             </div>
+                            <h2 className='mt-5 text-xl font-semibold text-gray-400 text-center'>TechMed</h2>
                         </SwiperSlide>
 
                         <SwiperSlide>
                             <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template2} alt="" />
                             </div>
-                            <div className='text-center mt-5'>
+                            <div className='text-center mt-5 flex flex-col md:flex-row justify-center'>
                                 {/* <h2 className='mt-5 text-xl font-semibold text-gray-400'>Template 1</h2> */}
                                 <Link to="https://job-portal-7afad.web.app/">
                                     <button className='btn bg-orange-400 text-white'>
@@ -94,14 +95,14 @@ const HireMe = () => {
                                         Server Side
                                     </button>
                                 </Link>
-                                <h2 className='mt-5 text-xl font-semibold text-gray-400'>Job Genius</h2>
                             </div>
+                            <h2 className='mt-5 text-xl font-semibold text-gray-400 text-center'>Job Genius</h2>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template3} alt="" />
                             </div>
-                            <div className='text-center mt-5'>
+                            <div className='text-center mt-5 flex flex-col md:flex-row justify-center'>
                                 
                                 <Link to="https://fashion-brand-4d7fd.web.app/">
                                     <button className='btn bg-orange-400 text-white'>
@@ -118,14 +119,15 @@ const HireMe = () => {
                                         Server Side
                                     </button>
                                 </Link>
-                                <h2 className='mt-5 text-xl font-semibold text-gray-400'>Menzwo Option</h2>
+                                
                             </div>
+                            <h2 className='mt-5 text-xl font-semibold text-gray-400 text-center'>Menzwo Option</h2>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template2} alt="" />
                             </div>
-                            <div className='text-center mt-5'>
+                            <div className='text-center mt-5 flex flex-col md:flex-row justify-center'>
                                 {/* <h2 className='mt-5 text-xl font-semibold text-gray-400'>Template 1</h2> */}
                                 <Link to="https://job-portal-7afad.web.app/">
                                     <button className='btn bg-orange-400 text-white'>
@@ -142,14 +144,15 @@ const HireMe = () => {
                                         Server Side
                                     </button>
                                 </Link>
-                                <h2 className='mt-5 text-xl font-semibold text-gray-400'>Job Genius</h2>
+                                
                             </div>
+                            <h2 className='mt-5 text-xl font-semibold text-gray-400 text-center'>Job Genius</h2>
                         </SwiperSlide>
                         <SwiperSlide className='mb-20'>
                             <div data-aos="fade-up" className='border-2 border-orange-400 rounded-lg'>
                                 <img className='rounded-lg h-20 md:h-72' src={template1} alt="" />
                             </div>
-                            <div className='text-center mt-5'>
+                            <div className='text-center mt-5 flex flex-col md:flex-row justify-center'>
                                 
                                 <Link to="https://diagnostic-center-manage-b294b.web.app/">
                                     <button className='btn bg-orange-400 text-white'>
@@ -166,8 +169,9 @@ const HireMe = () => {
                                         Server Side
                                     </button>
                                 </Link>
-                                <h2 className='mt-5 text-xl font-semibold text-gray-400'>TechMed</h2>
+                               
                             </div>
+                            <h2 className='mt-5 text-xl font-semibold text-gray-400 text-center'>TechMed</h2>
                         </SwiperSlide>
                     </div>
                 </Swiper>
