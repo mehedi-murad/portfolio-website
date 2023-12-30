@@ -11,6 +11,7 @@ import Navbar from "../Shared/Navbar/Navbar";
 import Skills from "../Skills/Skills";
 import Testimonial from "../Testimonial/Testimonial";
 import './Home.css'
+import Showcase from "../Showcase/Showcase";
 
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
                 <Header></Header>
             </div>
             <Services></Services>
+            <Showcase></Showcase>
             <Gallery></Gallery>
             <Skills></Skills>
             <Blog></Blog>

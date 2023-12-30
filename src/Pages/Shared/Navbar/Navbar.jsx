@@ -9,7 +9,7 @@ const Navbar = () => {
     Aos.init({duration:2000})
 },[])
   return (
-    <div className="navbar p-8">
+    <div id="gotop" className="navbar p-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">

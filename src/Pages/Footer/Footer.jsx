@@ -1,4 +1,4 @@
-import { FaBehance, FaDribbble, FaFacebookF, FaGithub, FaLinkedin, FaLocationArrow, FaMailBulk } from "react-icons/fa";
+import { FaArrowUp, FaBehance, FaDribbble, FaFacebookF, FaGithub, FaLinkedin, FaLocationArrow, FaMailBulk } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import './Footer.css'
 
@@ -86,6 +86,12 @@ const Footer = () => {
                         <FaLocationArrow></FaLocationArrow>
                     </div>
                     <p>Eastern Housing, Mirpur, 12</p>
+                </div>
+            </div>
+            <div>
+                <div className="bg-[#E76A18] flex justify-center items-center gap-2 p-4 mt-12">
+                    <FaArrowUp></FaArrowUp> 
+                    <a href="#gotop" className="text-white text-xl">Top</a>
                 </div>
             </div>
         </div>
