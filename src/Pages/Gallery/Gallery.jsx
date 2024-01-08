@@ -1,10 +1,9 @@
-import { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './Gallery.css'
 import Aos from "aos"
 import "aos/dist/aos.css"
-import Modals from '../Modals/Modals';
 
 const Gallery = () => {
     const [allImage, setAllImage] = useState([])
@@ -12,7 +11,6 @@ const Gallery = () => {
     const [uiImage, setUiImage] = useState([])
     const [graphicImage, setGraphicImage] = useState([])
     const [logoImage, setLogoImage] = useState([])
-    const [selectedImage, setSelectedImage] = useState(null);
 
     useEffect(() => {
         fetch('https://mehedi-portfolio-three.vercel.app/gallery')
@@ -75,20 +73,10 @@ const Gallery = () => {
                 <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-20'>
                 {allImage.map(image => (
                     <div data-aos="fade-right" key={image._id} className='container'>
-                        <Fragment>
-                            <img
-                                onClick={() => setSelectedImage(image._id)}
-                                className='h-48 w-[100%] rounded-lg image'
+                            <img className='h-48 w-[100%] rounded-lg image'
                                 src={image.image}
                                 alt=""
                             />
-
-                            <Modals isVisible={selectedImage === image._id} onClose={() => setSelectedImage(null)}>
-                                <div className=" p-5 w-[600px] flex justify-center items-center">
-                                    <img src={image.image} alt="" />
-                                </div>
-                            </Modals>
-                        </Fragment>
                         <div className="overlay">{image.title}</div>
                     </div>
                 ))}
